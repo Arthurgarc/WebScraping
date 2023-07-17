@@ -1,6 +1,6 @@
 
 public class Configuracao {
-	private String link = "https://www.infomoney.com.br/mercados/";
+	private static final String link = "https://www.infomoney.com.br/mercados/";
 	private boolean primeiraConexao = true;
 
 	public Configuracao() {

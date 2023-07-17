@@ -15,7 +15,7 @@ public class Scrap {
 			encontrarNoticia(doc);
 
 		} catch (Exception e) {
-			System.out.println("Falha na conexão!");
+			System.out.println("Falha na conexão ou encerramento do programa!");
 		}
 	}
 
@@ -38,6 +38,7 @@ public class Scrap {
 
 	public static void encontrarNoticia(Element doc) {
 		Elements elementoTitulo = doc.select("div.layout-container");
+
 		Elements cabecalho = elementoTitulo.select("h1.typography__display--2");
 		System.out.println("Título: " + cabecalho.text());
 
